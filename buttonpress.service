@@ -1,0 +1,11 @@
+[Unit]
+Description=Button Press
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/matt/buttonpress.py
+
+[Install]
+WantedBy=multi-user.target
